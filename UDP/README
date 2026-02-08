@@ -1,0 +1,16 @@
+UDP
+revcfrom
+sendto
+
+
+server             client
+|                    |
+|                    |
+socket();          socket();
+|                    |
+|                    |     
+bind                 |
+|                    |
+|                    |
+recfrom();<-------sendto();
+sendto();--------->recvfrom();
